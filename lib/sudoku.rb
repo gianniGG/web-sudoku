@@ -1,8 +1,5 @@
 require 'sinatra'
 
-
-
-
 class Sudoku
   
   COLUMN_SIZE = 9

@@ -1,0 +1,8 @@
+div.box, div.cell {
+  display: inline-block;
+}
+
+.cell input {
+  width: 45px;
+  height: 45px;
+}
