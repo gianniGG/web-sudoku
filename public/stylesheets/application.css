@@ -3,6 +3,15 @@ div.box, div.cell {
 }
 
 .cell input {
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 46px;
+}
+
+#sudoku {
+  font-size: 4;
+  text-align: center;
+}
+body {
+  text-align: center;
+  font-family: Palatino;
 }
