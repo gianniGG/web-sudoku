@@ -27,3 +27,8 @@ get '/' do # default route for our website
   @current_solution = puzzle(sudoku)
   erb :index
 end
+
+get '/solution' do
+  @current_solution = session[:solution]
+  erb :index
+end
