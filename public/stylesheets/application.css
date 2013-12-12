@@ -8,10 +8,22 @@ div.box, div.cell {
 }
 
 #sudoku {
-  font-size: 4;
+  font-size: 12;
   text-align: center;
 }
 body {
   text-align: center;
   font-family: Palatino;
+}
+
+.incorrect {
+  background-color: yellow;
+}
+
+.value-provided {
+  background-color: #DDD;
+}
+a {text-decoration: none;
+	color: black;
+
 }
