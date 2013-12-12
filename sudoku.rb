@@ -2,6 +2,8 @@ require 'sinatra'
 require './lib/sudoku'
 require './lib/cell'
 
+enable :sessions
+
 def random_sudoku
     # we're using 9 numbers, 1 to 9, and 72 zeros as an input
     # it's obvious there may be no clashes as all numbers are unique
@@ -13,7 +15,15 @@ def random_sudoku
     sudoku.to_s.chars
 end
 
+# this method removes some digits from the solution to create a puzzle
+def puzzle(sudoku)
+  # this method is yours to implement
+  sudoku 
+end
+
 get '/' do # default route for our website
-	@current_solution = random_sudoku
+  sudoku = random_sudoku
+  session[:solution] = sudoku
+  @current_solution = puzzle(sudoku)
   erb :index
 end
