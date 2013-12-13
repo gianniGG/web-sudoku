@@ -25,6 +25,10 @@ def puzzle(sudoku)
 end
 
 get '/' do # default route for our website
+   erb :home
+end
+
+get '/play' do # default route for our website
   prepare_to_check_solution
   generate_new_puzzle_if_necessary
   @current_solution = session[:current_solution] || session[:puzzle]
@@ -36,7 +40,7 @@ end
 
 get '/new' do
 	new_puzzle
-	redirect to("/")
+	redirect to("/play")
 end
 
 get '/solution' do
@@ -46,11 +50,11 @@ get '/solution' do
   erb :index
 end
 
-post '/' do
+post '/play' do
   cells = box_order_to_row_order(params["cell"]) 
   session[:current_solution] = cells.map{|value| value.to_i }.join
   session[:check_solution] = true
-  redirect to("/")
+  redirect to("/play")
 end
 
 def generate_new_puzzle_if_necessary
