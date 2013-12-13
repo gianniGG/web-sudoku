@@ -6,23 +6,34 @@ div.box, div.cell {
   width: 46px;
   height: 46px;
   text-align: center;
+  border-radius: 30px;
 }
 
+div.box {
+	border: 1px solid #8b222e;
+}
+
+.cell-row input {
+	margin: 5px 5px 5px 5px;
+	border:1px solid #8b222e;
+}
 #sudoku {
   font-size: 12;
   text-align: center;
 }
-body {
+body {	
+	background-image: url(http://www.ecardmedia.eu/data/media/907/White_Wallpaper_16.jpg);
   text-align: center;
-  font-family: Palatino;
+  font-family: Papyrus;
 }
 
 .incorrect {
   background-color: yellow;
+
 }
 
 .value-provided {
-  background-color: #bf1717;
+  background-color: #8b222e;
   color: white;
   text-align: center;
 }
@@ -31,7 +42,7 @@ a {text-decoration: none;
 }
 
 .homestyle {
-	width: 700px;
+	width: 500px;
   padding-top: 50px;
 	margin: auto;
 
@@ -39,12 +50,12 @@ a {text-decoration: none;
 
 button.x {
    border-top: 1px solid #fafafa;
-   background: #bf1717;
-   background: -webkit-gradient(linear, left top, left bottom, from(#661010), to(#bf1717));
-   background: -webkit-linear-gradient(top, #661010, #bf1717);
-   background: -moz-linear-gradient(top, #661010, #bf1717);
-   background: -ms-linear-gradient(top, #661010, #bf1717);
-   background: -o-linear-gradient(top, #661010, #bf1717);
+   background: #8b222e;
+   background: -webkit-gradient(linear, left top, left bottom, from(#661010), to(#8b222e));
+   background: -webkit-linear-gradient(top, #661010, #8b222e);
+   background: -moz-linear-gradient(top, #661010, #8b222e);
+   background: -ms-linear-gradient(top, #661010, #8b222e);
+   background: -o-linear-gradient(top, #661010, #8b222e);
    padding: 11px 22px;
    -webkit-border-radius: 15px;
    -moz-border-radius: 15px;
@@ -55,16 +66,16 @@ button.x {
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 20px;
-   font-family: Palatino, serif;
+   font-family: Papyrus, serif;
    text-decoration: none;
    vertical-align: middle;
    }
-.button:hover {
+.button.x:hover {
    border-top-color: #579c2e;
    background: #579c2e;
    color: #ccc;
    }
-.button:active {
+.button.x:active {
    border-top-color: #3275a1;
    background: #3275a1;
    }
