@@ -3,8 +3,11 @@ require './lib/sudoku'
 require './lib/cell'
 require './lib/helper'
 require 'sinatra/partial'
+require 'rack-flash'
+use Rack::Flash
 
 set :partial_template_engine, :erb
+set :session_secret, "I'm the secret key to sign the cookie"
 
 enable :sessions
 
@@ -39,6 +42,7 @@ end
 
 
 get '/new' do
+	session.clear
 	new_puzzle
 	redirect to("/play")
 end
@@ -74,6 +78,9 @@ end
 
 def prepare_to_check_solution
   @check_solution = session[:check_solution]
+  if @check_solution
+    flash[:notice] = "Shitty answers are in yellow mate..."
+  end
   session[:check_solution] = nil
 end
 
