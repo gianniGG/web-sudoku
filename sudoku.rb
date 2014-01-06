@@ -21,7 +21,7 @@ end
 
 def puzzle(sudoku)
   test = sudoku.dup # this method is yours to implement
-  until test.count(0) == 30 
+  until test.count(0) == 45 
   test[(0..80).to_a.sample] = 0
   end
   test 
@@ -43,6 +43,10 @@ end
 
 get '/new' do
 	session.clear
+	 sudoku = random_sudoku
+  session[:solution] = sudoku
+  session[:puzzle] = puzzle(sudoku)
+  session[:current_solution] = session[:puzzle]
 	new_puzzle
 	redirect to("/play")
 end

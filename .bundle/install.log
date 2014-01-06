@@ -1,0 +1,9 @@
+# Logfile created on 2014-01-04 19:53:37 +0000 by logger.rb/41954
+I, [2014-01-04T19:53:37.975120 #29329]  INFO -- : 0:  rack (1.5.2) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-04T19:53:37.993295 #29329]  INFO -- : 0:  rack-flash3 (1.0.5) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/rack-flash3-1.0.5.gemspec
+I, [2014-01-04T19:53:38.015636 #29329]  INFO -- : 0:  rack-protection (1.5.1) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/rack-protection-1.5.1.gemspec
+I, [2014-01-04T19:53:38.037513 #29329]  INFO -- : 0:  shotgun (0.9) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/shotgun-0.9.gemspec
+I, [2014-01-04T19:53:38.038055 #29329]  INFO -- : 0:  tilt (1.4.1) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-04T19:53:38.182634 #29329]  INFO -- : 0:  sinatra (1.4.4) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-04T19:53:38.217942 #29329]  INFO -- : 0:  sinatra-partial (0.4.0) from /usr/local/rvm/gems/ruby-2.0.0-p353/specifications/sinatra-partial-0.4.0.gemspec
+I, [2014-01-04T19:53:38.218374 #29329]  INFO -- : 0:  bundler (1.5.1) from /usr/local/rvm/gems/ruby-2.0.0-p353@global/specifications/bundler-1.5.1.gemspec
